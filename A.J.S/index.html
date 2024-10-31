@@ -1,0 +1,358 @@
+<html lang="en"><head>
+    
+
+
+
+
+
+    <link rel="preconnect" as="script" href="https://sdk.privacy-center.org/"><link rel="dns-prefetch" as="script" href="https://sdk.privacy-center.org/"><link rel="preload" as="script" href="https://sdk.privacy-center.org/97830d27-bc8f-4032-867d-543a480b521b/loader.js?target_type=notice&amp;target=TAmQaLFH"><script id="spcloader" type="text/javascript" async="" charset="utf-8" src="https://sdk.privacy-center.org/97830d27-bc8f-4032-867d-543a480b521b/loader.js?target_type=notice&amp;target=TAmQaLFH"></script><script type="text/javascript">window.gdprAppliesGlobally=false;(function(){function n(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var r=document.createElement("iframe");r.style.display="none";r.name=e;r.title=e;t.insertBefore(r,t.firstChild)}else{setTimeout(function(){n(e)},5)}}}function e(r,a,o,c,d){function e(e,t,r,n){if(typeof r!=="function"){return}if(!window[a]){window[a]=[]}var i=false;if(d){i=d(e,n,r)}if(!i){window[a].push({command:e,version:t,callback:r,parameter:n})}}e.stub=true;e.stubVersion=2;function t(n){if(!window[r]||window[r].stub!==true){return}if(!n.data){return}var i=typeof n.data==="string";var e;try{e=i?JSON.parse(n.data):n.data}catch(t){return}if(e[o]){var a=e[o];window[r](a.command,a.version,function(e,t){var r={};r[c]={returnValue:e,success:t,callId:a.callId};if(n.source){n.source.postMessage(i?JSON.stringify(r):r,"*")}},a.parameter)}}if(typeof window[r]!=="function"){window[r]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");n("__tcfapiLocator");(function(e,t){var r=document.createElement("link");r.rel="preconnect";r.as="script";var n=document.createElement("link");n.rel="dns-prefetch";n.as="script";var i=document.createElement("link");i.rel="preload";i.as="script";var a=document.createElement("script");a.id="spcloader";a.type="text/javascript";a["async"]=true;a.charset="utf-8";var o="https://sdk.privacy-center.org/"+e+"/loader.js?target_type=notice&target="+t;if(window.didomiConfig&&window.didomiConfig.user){var c=window.didomiConfig.user;var d=c.country;var s=c.region;if(d){o=o+"&country="+d;if(s){o=o+"&region="+s}}}r.href="https://sdk.privacy-center.org/";n.href="https://sdk.privacy-center.org/";i.href=o;a.src=o;var f=document.getElementsByTagName("script")[0];f.parentNode.insertBefore(r,f);f.parentNode.insertBefore(n,f);f.parentNode.insertBefore(i,f);f.parentNode.insertBefore(a,f)})("97830d27-bc8f-4032-867d-543a480b521b","TAmQaLFH")})();</script>
+    
+        
+        
+        
+        
+        
+        
+            
+            
+            
+            
+            
+                
+                
+        
+        
+        
+            
+            
+            
+            
+        
+    
+    
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+    
+        // 1. æ¯ä¸ªé¡µé¢åé»è®¤ ä¸åæè¿½è¸ª å ä¸æ¥å cookie
+        gtag('consent', 'default', {
+            analytics_storage: 'denied',
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            wait_for_update: 500, // if has CMP, wait 500ms for CMP to update
+            region: ['AT', 'BE', 'BG', 'HR', 'CY', 'CZ', 'DK', 'EE'
+                , 'FI', 'FR', 'DE', 'GR', 'HU', 'IE', 'IT', 'LV', 'LT', 'LU'
+                , 'MT', 'NL', 'PL', 'PT', 'RO', 'SK', 'SI', 'ES', 'SE',
+            ], // apply default to specific regions only
+        });
+        // 1.a å¶å®å¯éçè®¾ç½®
+        gtag('set', 'url_passthrough', true); // improve tracking via querystring info when consent is denied
+        gtag('set', 'ads_data_redaction', true); // further remove ads click info when ad_storage is denied
+    </script>
+    
+    <script>
+        // 2. æ ¹æ®ç¨æ·ä¹åæ¯å¦åæçéé¡¹ å¨æ¯ä¸ªé¡µé¢èªå¨è§¦å ä»£ç åæè¿½è¸ª å cookieÂ 
+        if (localStorage['gtag.consent.option'] !== undefined) {
+            const option = JSON.parse(localStorage['gtag.consent.option']);
+            gtag('consent', 'update', option);
+        }
+    </script>
+    
+    <script>
+        // æé®çä»£ç  ç»ç¨æ· åæ cookieÂ 
+        document.addEventListener('click', function (e) {
+            const btnAcceptCookie = e.target.closest('#didomi-notice-agree-button'); //åææé®
+            if (btnAcceptCookie === null) return;
+            const option = {
+                'analytics_storage': 'granted',
+                'ad_storage': 'granted',
+                'ad_user_data': 'granted',
+                'ad_personalization': 'granted'
+            };
+            gtag('consent', 'update', option);
+            // 3. ä¿å­å¹¶è®°å½ç¨æ·æ¯å¦åæçéé¡¹ ä»¥ä¾¿ä¸ä¸é¡µé¢èªå¨éæ©æ¯å¦åæ cookie
+            localStorage['gtag.consent.option'] = JSON.stringify(option);
+        });
+    </script>
+    
+    <script>
+        // æé®çä»£ç  ç»ç¨æ· æç» cookieÂ 
+        document.addEventListener('click', function (e) {
+            const btnRejectCookie = e.target.closest('#didomi-notice-disagree-button'); //æç»æé®
+            if (btnRejectCookie === null) return;
+            const option = {
+                'analytics_storage': 'denied',
+                'ad_storage': 'denied',
+                'ad_user_data': 'denied',
+                'ad_personalization': 'denied'
+            };
+            gtag('consent', 'update', option);
+            // 3b. ç§»é¤ä¹åä¿å­çç¨æ·åæéé¡¹çè®°å½ ä»¥ä¾¿ä¸ä¸é¡µé¢ä¸åèªå¨åæ cookie
+            localStorage.removeItem('gtag.consent.option');
+        });
+    </script>
+    
+        
+    
+    
+    
+    <meta charset="UTF-8">
+    <title>Immortals Revenge - Mythical MMORPG Experience | GHG</title>
+    <meta name="keywords" content="immortals revenge,titan revenge,dragon awaken,eternal fury,eternal fury eu,evil awakening,omega zodiac,Europe Server,multi-languages,idle,MMORPG,ARPG,Adventure,Browser games,fantasy game,Strategy Games,RPG,website,strategy,Strategy Games,video games,3D ARPG,free online games,web games;online games;free-to-play,league of angels pact,raid shadow legends,Wartune,GHG,Game Hollywood Games,zeus,athena,hades,odyssey,greek,greek mythology,god">
+    <meta name="description" content="Titan Revenge, a mythical MMORPG game.">
+    
+    
+    
+        <link rel="shortcut icon" href="https://www.gamehollywood.com/project/immortalsrevenge/ldp/ir01/images/favicon.ico">
+        <link href="https://www.gamehollywood.com/project/immortalsrevenge/ldp/ir01/css/style.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://www.gamehollywood.com/project/immortalsrevenge/ldp/ir01/js/jquery-1.11.1.min.js"></script><script type="text/javascript" async="" src="https://sdk.privacy-center.org/sdk/d468f22141696f53f581b685c06d3184cf86e586/modern/sdk.d468f22141696f53f581b685c06d3184cf86e586.js" charset="utf-8"></script>
+    
+        
+    <link href="https://www.gamehollywood.com/templet/website/validation/css/validationEngine.jquery.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.gamehollywood.com/templet/website/validation/css/template.css" type="text/css">
+    <script src="https://www.gamehollywood.com/templet/website/validation/js/languages/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="https://www.gamehollywood.com/templet/website/validation/js/jquery.validationEngine.js" v="20210805"></script>
+    
+        
+    
+    
+    
+    
+    
+    
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-10835969668"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-10835969668',{'allow_enhanced_conversions': true });
+    </script>
+    
+    <script type="text/javascript" async="" src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10835969668/?random=1730400448029&amp;cv=11&amp;fst=1730400448029&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4au0v897683788za200&amp;gcd=13l3l3l3l5l1&amp;dma=0&amp;tcfd=10000&amp;tag_exp=101533422~101823848~101878899~101878944~101925629&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.gamehollywood.com%2Fldp%2FcEEx.action%3FgameId%3D270%26lp%3Dir01%26cno%3DImmortalsRevenge_GHG_Google_WW%26scno%3DSEM-IR-WW-MMO%26gad_source%3D1%26gclid%3DCj0KCQjw1Yy5BhD-ARIsAI0RbXYXZJNl8VbUMVnRTv9V4ZIbBNYFyKt0FMq29H-ReZTT1rVwQlCs7OIaAi6bEALw_wcB&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Immortals%20Revenge%20-%20Mythical%20MMORPG%20Experience%20%7C%20GHG&amp;npa=0&amp;us_privacy=1---&amp;pscdl=noapi&amp;auid=1798321267.1730400448&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B130.0.6723.70%7CGoogle%2520Chrome%3B130.0.6723.70%7CNot%253FA_Brand%3B99.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config&amp;rfmt=3&amp;fmt=4"></script></head>
+    
+    <body><div id="didomi-host" data-nosnippet="true" aria-hidden="true"></div><iframe name="__tcfapiLocator" title="__tcfapiLocator" style="display: none;"></iframe>
+    
+    <!--官网登录途径-->
+    <a class="click" href="https://www.gamehollywood.com/" target="_blank">
+        <span>Find More Games on Game Hollywood</span>
+    </a>
+    
+    <div class="wrap">
+        <div class="bg"><img src="https://www.gamehollywood.com/project/immortalsrevenge/ldp/ir01/images/bg.jpg" alt="Immortals Revenge"></div>
+    
+        <!--视频 video-->
+        <video class="bg" muted="" loop="" autoplay="" preload="">
+            <source src="https://www.gamehollywood.com/project/immortalsrevenge/ldp/ir01/images/bg.mp4" type="video/mp4">
+            <source src="https://www.gamehollywood.com/project/immortalsrevenge/ldp/ir01/images/bg.webm" type="video/webm">
+        </video>
+    
+        <div class="main">
+            <div class="box">
+                <div class="logo"><img src="https://www.gamehollywood.com/project/immortalsrevenge/ldp/ir01/images/logo.png" alt="Immortals Revenge"></div>
+    
+                
+    
+    
+    <div class="box_txt">Login with</div>
+    <a class="fb" href="javascript:;" onclick="FBLogin();">Sign in with Facebook</a>
+    <a class="Google" href="javascript:;">Sign in with Google</a>
+    <div class="box_txt">or create a new account</div>
+    
+    <div class="box_cont">
+        <form name="registerForm" id="registerForm">
+            <div class="inputBox">
+                <input type="text" placeholder="EMAIL" class="validate[required,custom[email]]" id="reg_email">
+            </div>
+            <div class="inputBox">
+                <input type="password" placeholder="PASSWORD" class="validate[required,minSize[6],maxSize[50]]" id="reg_password">
+            </div>
+        </form>
+    
+        <div class="checkBox">
+            <input type="checkbox" checked=""> I agree to the <a rel="nofollow" href="https://www.gamehollywood.com/terms_of_use.html" target="_blank">Terms of Service</a> &amp; <a href="https://www.gamehollywood.com/privacy_policy.html" target="_blank">Privacy Policy</a>.
+        </div>
+    
+        <!--按钮-->
+        <a href="https://br.pinterest.com/" class="play" onclick="ldpReg();"></a>
+        <div class="Jump"><a href="" class="login_here"> Already have an account? Login here </a></div>
+    </div>
+            </div>
+    
+            <!--底部信息-->
+            
+    
+    
+    <div class="foot">
+        <a rel="nofollow" href="https://www.gamehollywood.com/terms_of_use.html" target="_blank">Terms of Use</a> |
+        <a rel="nofollow" href="https://www.gamehollywood.com/privacy_policy.html" target="_blank">Privacy Control</a> |
+        <a rel="nofollow" href="https://service.gamehollywood.com/support/index.action" target="_blank">Contact us</a> |
+        <a href="javascript:Didomi.preferences.show()">Consent preferences</a>|
+        Copyright © <script>document.write(new Date().getFullYear());</script>2024  <a href="https://www.gamehollywood.com/" target="_blank">Immortals Revenge</a>
+    </div>
+        </div>
+    </div>
+    
+    <script>
+        $(function(){
+            // 兼容IE9下的placeholder
+            function placeholderSupport() {
+                return 'placeholder' in document.createElement('input');
+            }
+            if(!placeholderSupport()){   // 判断浏览器是否支持 placeholder
+                $("[placeholder]").each(function(){
+                    var _this = $(this);
+                    _this.parent().append('<span class="placeholder" data-type="placeholder">' + _this.attr("placeholder") + '</span>');
+                    if(_this.val() != ""){
+                        _this.parent().find ("span.placeholder").hide();
+                    }
+                    else{
+                        _this.parent().find("span.placeholder").show();
+                    }
+                }).on("focus", function(){
+                    $(this).parent().find("span.placeholder").hide();
+                }).on("blur", function(){
+                    var _this = $(this);
+                    if(_this.val() != ""){
+                        _this.parent().find("span.placeholder").hide();
+                    }
+                    else{
+                        _this.parent().find("span.placeholder").show();
+                    }
+                });
+                // 点击表示placeholder的标签相当于触发input
+                $("span.placeholder").on("click", function(){
+                    $(this).hide();
+                    $(this).siblings("[placeholder]").trigger("click");
+                    $(this).siblings("[placeholder]").trigger("focus");
+                });
+    
+            }
+        })
+    </script>
+    
+    
+    <input type="hidden" id="source" name="source" value="">
+    <input type="hidden" id="cno" name="cno" value="ImmortalsRevenge_GHG_Google_WW">
+    <input type="hidden" id="scno" name="scno" value="SEM-IR-WW-MMO">
+    <input type="hidden" id="promoStatId" name="promoStatId" value="31409489">
+    <input type="hidden" id="pageNo" name="pageNo" value="ir01">
+    <input type="hidden" id="subid" name="subid" value="">
+    <input type="hidden" id="subid1" name="subid1" value="">
+    <input type="hidden" id="subid2" name="subid2" value="">
+    <input type="hidden" id="subid3" name="subid3" value="">
+    <input type="hidden" id="gameId" name="gameId" value="270">
+    <input type="hidden" id="gameName" name="gameName" value="ImmortalsRevenge_GHG">
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#registerForm").validationEngine({promptPosition:"topLeft"});
+        });
+        var ldpReging = false;
+        function ldpReg() {
+    
+            var userName = $("#reg_email").val();
+            var email = $("#reg_email").val();
+            var password = $("#reg_password").val();
+            var source = $("#source").val();
+            var cno = $("#cno").val();
+            var scno = $("#scno").val();
+            var promoStatId = $("#promoStatId").val();
+            var pageNo = $("#pageNo").val();
+            var isAcceptEmail = "false";
+            var subid = $("#subid").val();
+            var subid1 = $("#subid1").val();
+            var subid2 = $("#subid2").val();
+            var subid3 = $("#subid3").val();
+            var gameName = $("#gameName").val();
+    
+            if($('#registerForm').validationEngine('validate')){
+                if(ldpReging){
+                    return ;
+                }
+                ldpReging = true;
+                $.ajax({
+                    type: "POST",
+                    url: "/ldp/channelRegisterEx.action",
+                    async: false,
+                    data: "userName=" + userName + "&email=" + email + "&password=" + password + "&cno=" + cno + "&scno=" + scno
+                        + "&source=" + source + "&isAcceptEmail=" + isAcceptEmail + "&promoStatId=" + promoStatId
+                        + "&pageNo=" + pageNo + "&gameName=" + gameName
+                        + "&subid=" + subid + "&subid1=" + subid1 + "&subid2=" + subid2 + "&subid3=" + subid3,
+                    success: function(data){
+                        var map = eval("("+data+")");
+                        var suc = map.status;
+                        if(suc == 0){
+                            window.location.href = map.loginGameUrl;
+                        }else{
+                            alert(map.message);
+                        }
+                    }
+                });
+                ldpReging = false;
+            }
+        }
+    
+        var source = "";
+        var cno = "ImmortalsRevenge_GHG_Google_WW";
+        var scno = "SEM-IR-WW-MMO";
+        var promoStatId = "31409489";
+        var pageNo = "ir01";
+        var gameId = "270";
+        var gameName = "ImmortalsRevenge_GHG";
+        var subid = "";
+        var subid1 = "";
+        var subid2 = "";
+        var subid3 = "";
+    
+        var queryString = "a=a";
+        if (source != "") {
+            queryString += "&source=" + source;
+        }
+        if (cno != "") {
+            queryString += "&cno=" + cno;
+        }
+        if (scno != "") {
+            queryString += "&scno=" + scno;
+        }
+        if (promoStatId != "") {
+            queryString += "&promoStatId=" + promoStatId;
+        }
+        if (pageNo != "") {
+            queryString += "&pageNo=" + pageNo;
+        }
+        if (gameId != "") {
+            queryString += "&gameId=" + gameId;
+        }
+        if (gameName != "") {
+            queryString += "&gameName=" + gameName;
+        }
+        if (subid != "") {
+            queryString += "&subid=" + subid;
+        }
+        if (subid1 != "") {
+            queryString += "&subid1=" + subid1;
+        }
+        if (subid2 != "") {
+            queryString += "&subid2=" + subid2;
+        }
+        if (subid3 != "") {
+            queryString += "&subid3=" + subid3;
+        }
+    
+        function FBLogin() {
+            window.location.href = '/fb/ldpFbconn.jsp?' + queryString;
+        }
+    
+        $(function () {
+            // 绑定谷歌登录
+            $('.Google').attr('href', 'javascript:;').click(function () {
+                open('/googleLoginPage.action?source=gamePage&gameName=ImmortalsRevenge_GHG' + (cno === '' ? "" : "&cno=" + cno) + (scno === '' ? '' : '&scno=' + scno));
+            });
+        })
+    </script><iframe allow="join-ad-interest-group" data-tagging-id="AW-10835969668" data-load-time="1730400448060" height="0" width="0" src="https://td.doubleclick.net/td/rul/10835969668?random=1730400448029&amp;cv=11&amp;fst=1730400448029&amp;fmt=3&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45be4au0v897683788za200&amp;gcd=13l3l3l3l5l1&amp;dma=0&amp;tcfd=10000&amp;tag_exp=101533422~101823848~101878899~101878944~101925629&amp;u_w=1920&amp;u_h=1080&amp;url=https%3A%2F%2Fwww.gamehollywood.com%2Fldp%2FcEEx.action%3FgameId%3D270%26lp%3Dir01%26cno%3DImmortalsRevenge_GHG_Google_WW%26scno%3DSEM-IR-WW-MMO%26gad_source%3D1%26gclid%3DCj0KCQjw1Yy5BhD-ARIsAI0RbXYXZJNl8VbUMVnRTv9V4ZIbBNYFyKt0FMq29H-ReZTT1rVwQlCs7OIaAi6bEALw_wcB&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Immortals%20Revenge%20-%20Mythical%20MMORPG%20Experience%20%7C%20GHG&amp;npa=0&amp;us_privacy=1---&amp;pscdl=noapi&amp;auid=1798321267.1730400448&amp;uaa=x86&amp;uab=64&amp;uafvl=Chromium%3B130.0.6723.70%7CGoogle%2520Chrome%3B130.0.6723.70%7CNot%253FA_Brand%3B99.0.0.0&amp;uamb=0&amp;uam=&amp;uap=Windows&amp;uapv=10.0.0&amp;uaw=0&amp;fledge=1&amp;data=event%3Dgtag.config" style="display: none; visibility: hidden;"></iframe><iframe height="0" width="0" style="display: none; visibility: hidden;"></iframe>
+    
+    
+    
+    </body></html>
